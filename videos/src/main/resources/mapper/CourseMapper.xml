@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lwlly.dao.CourseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lwlly.pojo.Course">
+        <id column="id" property="id" />
+        <result column="course_title" property="courseTitle" />
+        <result column="course_desc" property="courseDesc" />
+        <result column="subject_id" property="subjectId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, course_title, course_desc, subject_id
+    </sql>
+
+</mapper>

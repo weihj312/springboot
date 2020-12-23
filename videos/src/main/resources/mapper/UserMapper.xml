@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lwlly.dao.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lwlly.pojo.User">
+        <id column="id" property="id" />
+        <result column="email" property="email" />
+        <result column="phoneNum" property="phoneNum" />
+        <result column="password" property="password" />
+        <result column="code" property="code" />
+        <result column="nickName" property="nickName" />
+        <result column="sex" property="sex" />
+        <result column="birthday" property="birthday" />
+        <result column="address" property="address" />
+        <result column="imgUrl" property="imgUrl" />
+        <result column="createTime" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, email, phoneNum, password, code, nickName, sex, birthday, address, imgUrl, createTime
+    </sql>
+
+</mapper>
